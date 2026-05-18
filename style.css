@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Glass effect */
+.container {
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  width: 320px;
+  color: white;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  text-align: center;
+}
+
+.output {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.output input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  outline: none;
+}
+
+.output button {
+  padding: 8px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.settings {
+  margin: 10px 0;
+}
+
+.settings label {
+  display: block;
+  margin: 5px 0;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+.generate {
+  width: 100%;
+  padding: 10px;
+  background: #00c9ff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+}
+
+/* Strength Bar */
+.strength-bar {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+#strengthBar {
+  height: 100%;
+  width: 0%;
+  border-radius: 5px;
+}
+
+/* Dark Mode */
+body.dark {
+  background: #121212;
+}
+
+body.dark .container {
+  background: rgba(30, 30, 30, 0.8);
+}
